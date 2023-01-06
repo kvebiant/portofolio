@@ -1,0 +1,47 @@
+@tailwind base;
+html {
+  scroll-behavior: smooth;
+}
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply tracking-wide;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl
+}
+
+h2{
+  @apply text-3xl sm:text-4xl
+}
+li{
+  @apply cursor-pointer
+}
+
+button{
+  @apply shadow-xl shadow-gray-400 rounded-xl uppercase
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  scroll-margin-top: 5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
