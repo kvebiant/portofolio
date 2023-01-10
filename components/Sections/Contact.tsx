@@ -84,7 +84,7 @@ export default function Contact() {
   return (
     <section
       id="Contact"
-      className=" w-full mt-20 h-full bg-teal-600 text-white p-2"
+      className=" w-full min-h-[92vh] h-full bg-teal-600 text-white flex-grow justify-center items-center"
     >
       {showAlert === 1 ? (
         <AlertButton
@@ -176,7 +176,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center pt-6 pr-6">
+        <div className="flex justify-center pt-6 pr-6 my-2 md:my-10">
           <a href="/#">
             <div className="rounded-full shadow-lg bg-black/40 shadow-black/20 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp className=" text-gray-300" size={20} />

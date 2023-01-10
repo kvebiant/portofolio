@@ -20,16 +20,22 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    window.onresize = () => {
+      if(window.innerWidth > 768){
+        setNav(false);
+      }
+    };
+
     const handleShadow = () => {
       if (window.scrollY >= 175) {
         setShadow(true);
       } else {
         setShadow(false);
       }
-      console.log(nav);
     };
-    window.addEventListener("scroll", handleShadow);
+    window.addEventListener("Scroll", handleShadow);
   }, []);
+
   const fileName = "Resume.pdf";
 
   return (
@@ -52,7 +58,7 @@ export default function Navbar() {
           </ul>
         </a>
 
-        <ul className=" hidden md:flex items-center">
+        <ul className=" hidden md:flex items-center font-semibold">
           <li>{navText({ text: "Home", link: "/#" })}</li>
           <li>{navText({ text: "About Me", link: "/#About" })}</li>
           <li>{navText({ text: "Projects", link: "/#Projects" })}</li>
@@ -69,21 +75,21 @@ export default function Navbar() {
             </a>
           </li>
         </ul>
-        <div onClick={handleNav} className="md:hidden">
+        <div onClick={handleNav} className="md:hidden hover:cursor-pointer hover:scale-105 ease-in duration-300">
           <AiOutlineMenu size={25} />
         </div>
       </div>
 
       <div
         className={
-          nav ? " md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? " fixed left-0 top-0 w-full h-screen bg-black/70" : ""
         }
       >
         <div
           className={
             nav
-              ? " fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : " fixed right-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? " fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-500"
+              : " fixed right-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-500"
           }
         >
           <div>
@@ -100,7 +106,7 @@ export default function Navbar() {
               </a>
               <div
                 onClick={handleNav}
-                className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className=" rounded-full shadow-lg shadow-gray-400 p-3 hover:cursor-pointer"
               >
                 <AiOutlineClose />
               </div>
@@ -112,7 +118,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className=" py-2 flex flex-col">
-            <ul className=" uppercase">
+            <ul className=" uppercase font-semibold">
               {optionText({ text: "Home", link: "/#" })}
               {optionText({ text: "About Me", link: "/#About" })}
               {optionText({ text: "Projects", link: "/#Projects" })}
