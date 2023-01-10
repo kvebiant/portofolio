@@ -1,5 +1,4 @@
 import { AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
-import Link from "next/link";
 import SocialMedia from "../Assets/SocialMedia";
 
 export default function Intro() {
