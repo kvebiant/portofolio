@@ -8,10 +8,10 @@ export default function Projects() {
         <div className="text-xl tracking-widest text-teal-700">
           <h2 className="py-4">What I've Built</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={'${process.env.NEXT_PUBLIC_PORT}/assets/image/projects/a'} projectUrl='/' />
-            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={'${process.env.NEXT_PUBLIC_PORT}/assets/image/projects/a'} projectUrl='/' />
-            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={'${process.env.NEXT_PUBLIC_PORT}/assets/image/projects/a'} projectUrl='/' />
-            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={'${process.env.NEXT_PUBLIC_PORT}/assets/image/projects/a'} projectUrl='/' />
+            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={process.env.NEXT_PUBLIC_PORT as string + '/assets/image/projects/a'} projectUrl='/' />
+            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={process.env.NEXT_PUBLIC_PORT as string + '/assets/image/projects/a'} projectUrl='/' />
+            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={process.env.NEXT_PUBLIC_PORT as string + '/assets/image/projects/a'} projectUrl='/' />
+            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={process.env.NEXT_PUBLIC_PORT as string + '/assets/image/projects/a'} projectUrl='/' />
           </div>
         </div>
       </div>

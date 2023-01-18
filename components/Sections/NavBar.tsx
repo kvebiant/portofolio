@@ -47,7 +47,7 @@ export default function Navbar() {
       }
     >
       <div className=" flex justify-between items-center w-full h-full px-2 xl:px-8 2xl:px-16">
-        <a href={process.env.PORT + "/#"}>
+        <a href={process.env.NEXT_PUBLIC_PORT as string + '/#'}>
           <ul className=" flex items-center cursor-pointer hover:scale-105 ease-in duration-300">
             <li>
               <h1 className=" text-xl text-teal-600 ">KVebiant</h1>
@@ -59,14 +59,14 @@ export default function Navbar() {
         </a>
 
         <ul className=" hidden md:flex items-center font-semibold">
-          <li>{navText({ text: "Home", link: process.env.PORT as string + "/#" })}</li>
-          <li>{navText({ text: "About Me", link: process.env.PORT as string + "/#About" })}</li>
-          <li>{navText({ text: "Projects", link: process.env.PORT as string + "/#Projects" })}</li>
-          <li>{navText({ text: "Contact Me", link: process.env.PORT as string + "/#Contact" })}</li>
+          <li>{navText({ text: "Home", link: process.env.NEXT_PUBLIC_PORT as string + '/#' })}</li>
+          <li>{navText({ text: "About Me", link: process.env.NEXT_PUBLIC_PORT as string + '/#About' })}</li>
+          <li>{navText({ text: "Projects", link: process.env.NEXT_PUBLIC_PORT as string + '/#Projects' })}</li>
+          <li>{navText({ text: "Contact Me", link: process.env.NEXT_PUBLIC_PORT as string + '/#Contact' })}</li>
           <li>
             <a
               className=" bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-white px-4 py-2 rounded-md ml-8"
-              href={process.env.PORT as string + '/assets/doc/resume.pdf'}
+              href={process.env.NEXT_PUBLIC_PORT as string + '/assets/doc/resume.pdf'}
               target="_blank"
               rel="noopener noreferrer"
               download={fileName}
@@ -119,12 +119,12 @@ export default function Navbar() {
           </div>
           <div className=" py-2 flex flex-col">
             <ul className=" uppercase font-semibold">
-              {optionText({ text: "Home", link: process.env.PORT as string + "/#" })}
-              {optionText({ text: "About Me", link: process.env.PORT as string + "/#About" })}
-              {optionText({ text: "Projects", link: process.env.PORT as string + "/#Projects" })}
-              {optionText({ text: "Contact Me", link: process.env.PORT as string + "/#Contact" })}
+              {optionText({ text: "Home", link: process.env.NEXT_PUBLIC_PORT as string + '/#' })}
+              {optionText({ text: "About Me", link: process.env.NEXT_PUBLIC_PORT as string + '/#About' })}
+              {optionText({ text: "Projects", link: process.env.NEXT_PUBLIC_PORT as string + '/#Projects' })}
+              {optionText({ text: "Contact Me", link: process.env.NEXT_PUBLIC_PORT as string + '/#Contact' })}
               <a
-                href={process.env.PORT as string + "/assets/doc/resume.pdf"}
+                href={process.env.NEXT_PUBLIC_PORT as string + '/assets/doc/resume.pdf'}
                 target="_blank"
                 rel="noopener noreferrer"
                 download={fileName}
