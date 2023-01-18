@@ -59,14 +59,14 @@ export default function Navbar() {
         </a>
 
         <ul className=" hidden md:flex items-center font-semibold">
-          <li>{navText({ text: "Home", link: process.env.PORT + "/#" })}</li>
-          <li>{navText({ text: "About Me", link: process.env.PORT + "/#About" })}</li>
-          <li>{navText({ text: "Projects", link: process.env.PORT + "/#Projects" })}</li>
-          <li>{navText({ text: "Contact Me", link: process.env.PORT + "/#Contact" })}</li>
+          <li>{navText({ text: "Home", link: process.env.PORT as string + "/#" })}</li>
+          <li>{navText({ text: "About Me", link: process.env.PORT as string + "/#About" })}</li>
+          <li>{navText({ text: "Projects", link: process.env.PORT as string + "/#Projects" })}</li>
+          <li>{navText({ text: "Contact Me", link: process.env.PORT as string + "/#Contact" })}</li>
           <li>
             <a
               className=" bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-white px-4 py-2 rounded-md ml-8"
-              href={process.env.PORT + '/assets/doc/resume.pdf'}
+              href={process.env.PORT as string + '/assets/doc/resume.pdf'}
               target="_blank"
               rel="noopener noreferrer"
               download={fileName}
@@ -119,12 +119,12 @@ export default function Navbar() {
           </div>
           <div className=" py-2 flex flex-col">
             <ul className=" uppercase font-semibold">
-              {optionText({ text: "Home", link: process.env.PORT + "/#" })}
-              {optionText({ text: "About Me", link: process.env.PORT + "/#About" })}
-              {optionText({ text: "Projects", link: process.env.PORT + "/#Projects" })}
-              {optionText({ text: "Contact Me", link: process.env.PORT + "/#Contact" })}
+              {optionText({ text: "Home", link: process.env.PORT as string + "/#" })}
+              {optionText({ text: "About Me", link: process.env.PORT as string + "/#About" })}
+              {optionText({ text: "Projects", link: process.env.PORT as string + "/#Projects" })}
+              {optionText({ text: "Contact Me", link: process.env.PORT as string + "/#Contact" })}
               <a
-                href={process.env.PORT + "/assets/doc/resume.pdf"}
+                href={process.env.PORT as string + "/assets/doc/resume.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 download={fileName}
