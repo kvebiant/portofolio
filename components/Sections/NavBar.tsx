@@ -66,7 +66,7 @@ export default function Navbar() {
           <li>
             <a
               className=" bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-white px-4 py-2 rounded-md ml-8"
-              href={process.env.NEXT_PUBLIC_PORT as string + '/assets/doc/resume.pdf'}
+              href={process.env.NEXT_PUBLIC_PORT as string + '/assets/doc/Resume.pdf'}
               target="_blank"
               rel="noopener noreferrer"
               download={fileName}
@@ -94,7 +94,7 @@ export default function Navbar() {
         >
           <div>
             <div className=" flex top-0 w-full items-center justify-between">
-              <a href={"/#"}>
+              <a href={process.env.NEXT_PUBLIC_PORT as string + '/#'}>
                 <ul className=" flex items-center cursor-pointer hover:scale-105 ease-in duration-300">
                   <li>
                     <h1 className=" text-2xl text-teal-600 ">KVebiant</h1>
@@ -124,7 +124,7 @@ export default function Navbar() {
               {optionText({ text: "Projects", link: process.env.NEXT_PUBLIC_PORT as string + '/#Projects' })}
               {optionText({ text: "Contact Me", link: process.env.NEXT_PUBLIC_PORT as string + '/#Contact' })}
               <a
-                href={process.env.NEXT_PUBLIC_PORT as string + '/assets/doc/resume.pdf'}
+                href={process.env.NEXT_PUBLIC_PORT as string + '/assets/doc/Resume.pdf'}
                 target="_blank"
                 rel="noopener noreferrer"
                 download={fileName}
