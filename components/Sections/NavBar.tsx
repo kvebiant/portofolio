@@ -59,10 +59,10 @@ export default function Navbar() {
         </a>
 
         <ul className=" hidden md:flex items-center font-semibold">
-          <li>{navText({ text: "Home", link: "/#" })}</li>
-          <li>{navText({ text: "About Me", link: "/#About" })}</li>
-          <li>{navText({ text: "Projects", link: "/#Projects" })}</li>
-          <li>{navText({ text: "Contact Me", link: "/#Contact" })}</li>
+          <li>{navText({ text: "Home", link: "/portofolio/#" })}</li>
+          <li>{navText({ text: "About Me", link: "/portofolio/#About" })}</li>
+          <li>{navText({ text: "Projects", link: "/portofolio/#Projects" })}</li>
+          <li>{navText({ text: "Contact Me", link: "/portofolio/#Contact" })}</li>
           <li>
             <a
               className=" bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-white px-4 py-2 rounded-md ml-8"
@@ -119,10 +119,10 @@ export default function Navbar() {
           </div>
           <div className=" py-2 flex flex-col">
             <ul className=" uppercase font-semibold">
-              {optionText({ text: "Home", link: "/#" })}
-              {optionText({ text: "About Me", link: "/#About" })}
-              {optionText({ text: "Projects", link: "/#Projects" })}
-              {optionText({ text: "Contact Me", link: "/#Contact" })}
+              {optionText({ text: "Home", link: "/portofolio/#" })}
+              {optionText({ text: "About Me", link: "/portofolio/#About" })}
+              {optionText({ text: "Projects", link: "/portofolio/#Projects" })}
+              {optionText({ text: "Contact Me", link: "/portofolio/#Contact" })}
               <a
                 href="/assets/doc/resume.pdf"
                 target="_blank"
