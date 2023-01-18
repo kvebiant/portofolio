@@ -8,7 +8,7 @@ import CardSkill from "../Assets/AboutAssets/Skills";
 
 export default function About() {
   return (
-    <section id="About" className=" w-full min-h-[92vh] bg-teal-600 text-white p-2">
+    <section id="About" className=" w-full min-h-[(100vh-5rem)] bg-teal-600 text-white p-2">
       <div className=" max-w-[1240px] h-full text-center mx-auto p-2 flex flex-col justify-center ">
         <div>
           <h3 className="text-sm pt-4 text-white/90">Get to Know</h3>

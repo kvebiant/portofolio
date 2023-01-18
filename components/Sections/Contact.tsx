@@ -84,7 +84,7 @@ export default function Contact() {
   return (
     <section
       id="Contact"
-      className=" w-full min-h-[92vh] h-full bg-teal-600 text-white flex-grow justify-center items-center"
+      className=" w-full min-h-[(100vh-5rem)] h-full bg-teal-600 text-white flex-grow justify-center items-center"
     >
       {showAlert === 1 ? (
         <AlertButton
