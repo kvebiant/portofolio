@@ -16,13 +16,11 @@ export default function About() {
           <div className="md:flex items-center justify-between gap-20">
             <div className=" bg-white rounded-xl p-4">
               <Image
-                className=" rounded-xl hover:scale-95 hover:rotate-6 ease-in duration-300"
+                className=" rounded-xl hover:scale-90 hover:rotate-6 ease-in duration-300"
                 src="/assets/image/ava.jpeg"
                 alt="/"
-                width={550}
-                height={550}
-                layout='responsive'
-                priority
+                width={2000}
+                height={2000}
               />
             </div>
 
