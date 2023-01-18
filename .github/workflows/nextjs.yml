@@ -13,9 +13,10 @@ on:
   workflow_dispatch:
 
 env:
-  NODE_AUTH_TOKEN: ${{ secrets.NEXT_PUBLIC_EMAIL_SERVICE_ID }}
+  NODE_AUTH_TOKEN: ${{ env.NEXT_PUBLIC_EMAIL_SERVICE_ID }}
   NODE_AUTH_TOKEN: ${{ env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID }}
   NODE_AUTH_TOKEN: ${{ env.NEXT_PUBLIC_EMAIL_USER_ID }}
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
