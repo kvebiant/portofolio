@@ -8,10 +8,10 @@ export default function Projects() {
         <div className="text-xl tracking-widest text-teal-700">
           <h2 className="py-4">What I've Built</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={'/assets/image/a'} projectUrl='/' />
-            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={'/assets/projects/b'} projectUrl='/' />
-            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={'/assets/projects/c'} projectUrl='/' />
-            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={'/assets/projects/d'} projectUrl='/' />
+            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={''} projectUrl='/' />
+            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={''} projectUrl='/' />
+            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={''} projectUrl='/' />
+            <ProjectItems title='Test Subject' subTitle="React JS" backgroundImg={''} projectUrl='/' />
           </div>
         </div>
       </div>
