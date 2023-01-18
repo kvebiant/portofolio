@@ -5,7 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   basePath: '/portofolio',
-  path: '/'
+  assetPrefix: '/portofolio'
 }
 
 module.exports = nextConfig

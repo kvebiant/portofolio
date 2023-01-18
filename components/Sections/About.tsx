@@ -17,7 +17,7 @@ export default function About() {
             <div className=" bg-white rounded-xl p-4">
               <Image
                 className=" rounded-xl hover:scale-90 hover:rotate-6 ease-in duration-300"
-                src="/assets/image/ava.jpeg"
+                src={"${process.env.PORT}/assets/image/ava.jpeg"}
                 alt="/"
                 width={2000}
                 height={2000}
