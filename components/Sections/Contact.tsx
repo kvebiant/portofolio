@@ -177,7 +177,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="flex justify-center pt-6 pr-6 my-2 md:my-10">
-          <a href="/portofolio/#">
+          <a href={process.env.PORT + "/#"}>
             <div className="rounded-full shadow-lg bg-black/40 shadow-black/20 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp className=" text-gray-300" size={20} />
             </div>
