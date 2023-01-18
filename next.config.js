@@ -5,7 +5,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   basePath: '/portofolio',
-  assetPrefix: '/portofolio'
+  assetPrefix: '/portofolio',
+  images: {
+    loader: "akamai",
+    path: "/"
+  }
 }
 
 module.exports = nextConfig
