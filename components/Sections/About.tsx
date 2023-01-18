@@ -19,8 +19,10 @@ export default function About() {
                 className=" rounded-xl hover:scale-95 hover:rotate-6 ease-in duration-300"
                 src="/../public/assets/image/ava.jpeg"
                 alt="/"
-                width={1400}
-                height={1400}
+                width={550}
+                height={550}
+                layout='responsive'
+                priority
               />
             </div>
 
