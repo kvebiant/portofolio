@@ -10,7 +10,7 @@ export default function Projects() {
       <div className=" max-w-[1240px] text-center mx-auto p-2 flex flex-col justify-center ">
         <div className="text-xl tracking-widest text-teal-700">
           <h2 className="py-4">What I've Built</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="columns-1 md:columns-2 gap-8">
             <ProjectItems
               title="Weather App"
               subTitle="Flutter"
