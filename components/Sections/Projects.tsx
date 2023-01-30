@@ -16,7 +16,7 @@ export default function Projects() {
               subTitle="Flutter"
               backgroundImg={
                 (process.env.NEXT_PUBLIC_PORT as string) +
-                "/assets/image/projects/a"
+                "/assets/image/projects/Clima.png"
               }
               aspectRatio="aspect-auto"
               hasDesc={true}
@@ -28,7 +28,7 @@ export default function Projects() {
               subTitle=''
               backgroundImg={
                 (process.env.NEXT_PUBLIC_PORT as string) +
-                "/assets/image/projects/a"
+                "/assets/image/projects/comingsoon.png"
               }
               aspectRatio="aspect-square"
               hasDesc={false}
@@ -40,7 +40,7 @@ export default function Projects() {
               subTitle=''
               backgroundImg={
                 (process.env.NEXT_PUBLIC_PORT as string) +
-                "/assets/image/projects/a"
+                "/assets/image/projects/comingsoon.png"
               }
               aspectRatio="aspect-square"
               hasDesc={false}
