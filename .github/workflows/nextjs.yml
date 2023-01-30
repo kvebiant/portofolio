@@ -47,7 +47,8 @@ jobs:
             echo "Unable to determine packager manager"
             exit 1
           fi
-      - name: Setup env    
+      - name: Setup env  
+        run:   
         env:
           NEXT_PUBLIC_EMAIL_SERVICE_ID: ${{ env.NEXT_PUBLIC_EMAIL_SERVICE_ID }}
           NEXT_PUBLIC_EMAIL_TEMPLATE_ID: ${{ env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID }}
