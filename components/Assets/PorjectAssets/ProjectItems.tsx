@@ -46,7 +46,7 @@ const ProjectItem = ({
             </p>
           </Link>
           {projectDemo != "" ? (
-            <Link href={projectDemo}>
+            <Link href={projectDemo} target="_blank" rel="noopener noreferrer">
               <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                 View Demo
               </p>
